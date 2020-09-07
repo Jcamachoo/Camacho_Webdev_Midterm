@@ -7,7 +7,7 @@
 
 <form> 
  
-  <div style="background-color: width:"650" pink" class="container">  
+  <div style="background-color: pink" width="600" class="container" >  
 <h1> Student Registration Form</h1> </center>  
   <hr>  
   <label> <strong> &nbsp; Firstname <strong></label>   
@@ -49,7 +49,7 @@
 <label> 
  &nbsp;  Phone #: <br> 
   </label>
-&nbsp;<input type="text" name="country code"  value="+91" size="2"/> 
+&nbsp;<input type="text" name="country code"  value="+63" size="2"/> 
 <input type="text" name="phone" size="10"/> <br> <br>
 &nbsp; Current Address :
   <br>
@@ -67,13 +67,15 @@
   
   <br><br>
   <input type="checkbox" 
-                   id="cbxPolicy1"
-                   name="cbxPolicy1"
-                   value="I accept lorem ipsum"/>
+                   id="cbxPolicy"
+                   name="cbxPolicy"
+                   value="Accept privacy policy and terms"/>
             <label for="cbxPolicy1">Accept privacy policy and terms</label>
   <br><br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <button style="background-color: #FDAB9F" type="submit" class="registerbtn">REGISTER</button>
+   
+  <td colspan="2" align="right">
+            <button id="btnLogin" onClick="alert(document.getElementById('txtName').value)">Register</button>
+  
  <button style="background-color: #FDAB9F" type="reset" class="registerbtn">RESET </button>
   
   <br><br>
