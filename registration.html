@@ -4,21 +4,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 </head>  
 <body>  
-<form>  
 
-  <div class="container">  
-  <center>  <h1> Student Registration Form</h1> </center>  
+<form> 
+ 
+  <div style="background-color: pink" class="container">  
+<h1> Student Registration Form</h1> </center>  
   <hr>  
-  <label> <strong> Firstname <strong></label>   
+  <label> <strong> &nbsp; Firstname <strong></label>   
 <input type="text" name="firstname" placeholder= "Firstname" size="25" required /> 
     <br><br>
-<label> <strong> Lastname: <strong></label>    
+<label> <strong> &nbsp; Lastname: <strong></label>    
 <input type="text" name="lastname" placeholder="Lastname" size="25"required /> 
   
   <br><br>
 <div>  
 <label>   
-  <strong>Course</strong>
+  <strong>&nbsp;Course</strong>
 </label>   
   
 <select>  
@@ -35,7 +36,7 @@
 </div>  
 <div>  
 <label>   
-Gender :  
+&nbsp; Gender :  
 </label><br>
   <br>
 <input type="radio" value="Male" name="gender" checked > Male   
@@ -46,27 +47,36 @@ Gender :
 </div>  
 <label>   
 <label> 
-  Phone #: <br> 
+ &nbsp;  Phone #: <br> 
   </label>
-<input type="text" name="country code"  value="+91" size="2"/> 
+&nbsp;<input type="text" name="country code"  value="+91" size="2"/> 
 <input type="text" name="phone" size="10"/> <br> <br>
-Current Address :
+&nbsp; Current Address :
   <br>
-<textarea cols="50" rows="3" placeholder="Current Address" value="address" required>  
+&nbsp;<textarea cols="50" rows="3" placeholder="Current Address" value="address" required>  
 </textarea> 
   <br><br>
- <label for="email"><b>Email</b></label>  
+ &nbsp;<label for="email"><b>Email</b></label>  
  <input type="text" placeholder="Enter Email" name="email" required>  
   <br><br>
-    <label for="psw"><b>Password</b></label>  
+  &nbsp;<label for="psw"><b>Password</b></label>  
     <input type="password" placeholder="Enter Password" name="psw" required>  
   <br><br>
-    <label for="psw-repeat"><b>Re-type Password</b></label>  
+   &nbsp; <label for="psw-repeat"><b>Re-type Password</b></label>  
     <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
   
-  <br><br><br>
-    <button type="submit" class="registerbtn">Register</button>
-  <button type="reset" class="registerbtn">RESET</button>
+  <br><br>
+  <input type="checkbox" 
+                   id="cbxPolicy1"
+                   name="cbxPolicy1"
+                   value="I accept lorem ipsum"/>
+            <label for="cbxPolicy1">Accept privacy policy and terms</label>
+  <br><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <button style="background-color: #FDAB9F" type="submit" class="registerbtn">REGISTER</button>
+ <button style="background-color: #FDAB9F" type="reset" class="registerbtn">RESET </button>
+  
+  <br><br>
 </form>  
 </body>  
 </html>  
