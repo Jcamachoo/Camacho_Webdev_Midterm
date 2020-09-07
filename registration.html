@@ -2,58 +2,20 @@
 <html>  
 <head>  
 <meta name="viewport" content="width=device-width, initial-scale=1">  
-<style>  
-body{    
-  background-color: black;  
-}  
-.container {  
-    padding: 50px;  
-  background-color: pink;  
-}  
-  
-input[type=text], input[type=password], textarea {  
-  width: 100%;  
-  padding: 15px;  
-  margin: 5px 0 22px 0;  
-  display: inline-block;  
-  border: none;  
-  background: #f1f1f1;  
-}  
-input[type=text]:focus, input[type=password]:focus {  
-}  
- div {  
-            padding: 10px 0;  
-         }  
-hr {  
-  border: 1px solid #f1f1f1;  
-  margin-bottom: 25px;  
-}  
-.registerbtn {  
-  background-color: #E0115F;  
-  color: white;  
-  padding: 16px 20px;  
-  margin: 8px 0;  
-  border: 2;  
-  cursor: pointer;  
-  width: 30%;  
-  opacity: 0.9; 
-  
-}  
-.registerbtn:hover {  
-  opacity: ;  
-}  
-</style>  
 </head>  
 <body>  
 <form>  
+
   <div class="container">  
   <center>  <h1> Student Registration Form</h1> </center>  
   <hr>  
   <label> <strong> Firstname <strong></label>   
-<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<input type="text" name="firstname" placeholder= "Firstname" size="25" required /> 
+    <br><br>
 <label> <strong> Lastname: <strong></label>    
-<input type="text" name="lastname" placeholder="Lastname" size="15"required />    
-
+<input type="text" name="lastname" placeholder="Lastname" size="25"required /> 
+  
+  <br><br>
 <div>  
 <label>   
   <strong>Course</strong>
@@ -68,7 +30,8 @@ hr {
 <option value="BSIS">BSIS</option>
 <option value="BSHRM">BSHRM</option>  
 <option value="BSN">BSN</option>  
-</select>  
+</select> 
+  <br><br>
 </div>  
 <div>  
 <label>   
@@ -87,17 +50,21 @@ Gender :
   </label>
 <input type="text" name="country code"  value="+91" size="2"/> 
 <input type="text" name="phone" size="10"/> <br> <br>
-Current Address :  
+Current Address :
+  <br>
 <textarea cols="50" rows="3" placeholder="Current Address" value="address" required>  
-</textarea>  
+</textarea> 
+  <br><br>
  <label for="email"><b>Email</b></label>  
  <input type="text" placeholder="Enter Email" name="email" required>  
-  
+  <br><br>
     <label for="psw"><b>Password</b></label>  
     <input type="password" placeholder="Enter Password" name="psw" required>  
-  
+  <br><br>
     <label for="psw-repeat"><b>Re-type Password</b></label>  
     <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+  
+  <br><br><br>
     <button type="submit" class="registerbtn">Register</button>
   <button type="reset" class="registerbtn">RESET</button>
 </form>  
