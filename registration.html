@@ -7,9 +7,12 @@
 
 <form> 
  
-  <div style="background-color: pink" width="600" class="container" >  
-<h1> Student Registration Form</h1> </center>  
-  <hr>  
+  
+  <div style="background-color: #d3d3d3" width="600" class="container" >  
+<h1> Student Registration Form</h1>
+    <p>Students can fill up this form or provide their personal information
+      <br>to join a specific school organization.</p>
+  <hr> 
   <label> <strong> &nbsp; Firstname <strong></label>   
 <input type="text" name="firstname" placeholder= "Firstname" size="25" required /> 
     <br><br>
@@ -45,7 +48,22 @@
   
   <br><br>
 </div>  
+<div>  
 <label>   
+  <strong>&nbsp;Non-Academic Club</strong>
+</label>   
+  
+<select>  
+<option value="Course">Select Club</option>  
+<option value="Bibliophile">Bibliophile</option>  
+<option value="FACES">FACES</option>  
+<option value="Debate Socitey">Debate Society</option>  
+<option value="Media">Media</option>
+<option value="Rotaract">Rotaract</option>
+<option value="Peer Facilitator">Peer facilitator</option>    
+</select> 
+  <br><br>
+</div>    
 <label> 
  &nbsp;  Phone #: <br> 
   </label>
@@ -62,7 +80,7 @@
   &nbsp;<label for="psw"><b>Password</b></label>  
     <input type="password" placeholder="Enter Password" name="psw" required>  
   <br><br>
-   &nbsp; <label for="psw-repeat"><b>Re-type Password</b></label>  
+   &nbsp;<label for="psw-repeat"><b>Re-type Password</b></label>  
     <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
   
   <br><br>
@@ -77,7 +95,7 @@
   
  <button style="background-color: #FDAB9F" type="reset" class="registerbtn">RESET </button>
   
-  <br><br>
+  <br><br><hr>
 </form>  
 </body>  
 </html>  
