@@ -51,7 +51,7 @@
 }
 
 .detail{
-    padding: 25px;
+    padding: 20px;
     box-sizing: border-box;
     position: absolute;
     z-index: 11;
@@ -115,20 +115,70 @@
 <body style="background-color:#F4E3D7;">
   
      <h1 class="title text-center">Master-Detail</h1>
-    <div class="md-container">
+    
         <div class="col-3 master">
           <p style="color:#142b43;font-size:25px;">ACTIVITIES</p>
-            <div class="master-item active-item" onclick="select(this)">Registration page</div>
           
-            <div class="master-item" onclick="select(this)">Calendar page</div>
-            <div class="master-item" onclick="select(this)">Wishlist page</div>
-            <div class="master-item" onclick="select(this)">Makup page</div>
-           <div class="master-item" onclick="select(this)">Poem page</div>
-        </div>
+    <div class = "master-item"
+           id = "reg" onclick="myFunct1()"> Registration</div>
+    <div class = "master-item" id = "cal"
+           onclick="myFunct2()"> Calendar</div>         
+      <div class = "master-item" id = "wl"
+           onclick="myFunct3()"> Wishlist</div>   
+  <div class = "master-item" id = "mu"
+           onclick="myFunct4()"> Markup</div>
+              <div class = "master-item" id = "poem"
+           onclick="myFunct5()"> Poem</div>
+                  
+  </div>
         <div  class="col-9 detail">
-            <button id="back-btn" class="hidden-md" onclick="back()">< Back</button>
-            <h1 class="detail-title text-center">registration page</h1>
+            <button id="back-btn" class="-md" onclick="back()">< Back</button>
+              
+  <iframe id="frame" width="700" height="600"> </iframe>
+             
+       <div id="registration"></div>
+          <script>
+          function myFunct1() {
+                document.getElementById("frame").src = "https://jcamachoo.github.io/Camacho_Webdev_Midterm/registration.html"
+              }
+            </script>
+              
+              
+       <div id="cale">
+       </div>
+          <script>
+          function myFunct2() {
+                document.getElementById("frame").src = "https://jcamachoo.github.io/Camacho_Webdev_Midterm/calendar.html"
+              }
+            </script>
+             
+       <div id="wshlst">
+       </div>
+          <script>
             
+          function myFunct3() {
+                document.getElementById("frame").src = "https://jcamachoo.github.io/Camacho_Webdev_Midterm/wishlist.html"
+              }
+            </script>
+              
+          
+       <div id="mrkup">
+       </div>
+          <script>
+          function myFunct4() {
+                document.getElementById("frame").src = "https://jcamachoo.github.io/Camacho_Webdev_Midterm/markup.html"
+              }
+            </script>
+       
+              
+       <div id="poemm">
+       </div>
+          <script>
+          function myFunct5() {
+                document.getElementById("frame").src = "https://jcamachoo.github.io/Camacho_Webdev_Midterm/poem.html"
+              }
+            </script>
+  
  <script> 
    const detail = document.querySelector('.detail');
         const detailTitle = document.querySelector('.detail-title');
@@ -154,9 +204,8 @@
             }
             detail.classList.add('hidden-md-down');
         }
-              </script>
-                   
+              </script>    
         </div>
-      <hr><hr>
+
  </body>
 </html>
