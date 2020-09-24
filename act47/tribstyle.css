@@ -8,14 +8,14 @@ body {
 
 .wrapmid1 {
   margin: auto;
-  max-width: 300px;
+  max-width: 50px;
   
   
 }
 
 .wrapmid2 {
   margin: auto;
-  max-width: 512px;
+  max-width: 50px;
 }
 .thumbnail {
   background-color: black; 
@@ -30,7 +30,7 @@ body {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 50%;
 }
 
 td, th {
