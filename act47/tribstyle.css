@@ -6,7 +6,7 @@ body {
 }
 
 .jumbotron {
-  margin-top: 3em;
+  margin: 1em;
   background-color: #fcbcb5;
   border-color: #FFF0F5;
   border-style: dashed; 
