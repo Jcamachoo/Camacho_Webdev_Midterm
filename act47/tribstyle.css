@@ -8,14 +8,14 @@ body {
 
 .wrapmid1 {
   margin: auto;
-  max-width: 50px;
+  max-width: 300px;
   
   
 }
 
 .wrapmid2 {
   margin: auto;
-  max-width: 50px;
+  max-width: 512px;
 }
 .thumbnail {
   background-color: black; 
@@ -30,7 +30,7 @@ body {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
 }
 
 td, th {
@@ -43,6 +43,6 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 hr.new5 {
-  border: 5px solid black;
+  border: 10px solid green;
   border-radius: 5px;
 }
