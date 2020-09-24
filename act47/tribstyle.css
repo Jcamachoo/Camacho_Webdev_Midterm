@@ -1,0 +1,48 @@
+body {
+  margin-top: 30px;
+  background-color: black;
+}
+.reeves {
+  color: #007300; 
+}
+
+.wrapmid1 {
+  margin: auto;
+  max-width: 300px;
+  
+  
+}
+
+.wrapmid2 {
+  margin: auto;
+  max-width: 512px;
+}
+.thumbnail {
+  background-color: black; 
+}
+.text-center {
+  color: black; 
+  
+}
+.jumbotron {
+  background-color: lightgray; 
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+hr.new5 {
+  border: 5px solid black;
+  border-radius: 5px;
+}
