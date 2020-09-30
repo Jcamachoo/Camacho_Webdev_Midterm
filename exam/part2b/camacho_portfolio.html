@@ -1,0 +1,820 @@
+<html> 
+  <head>
+    <style>
+      body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container-fluid {
+  position: fixed;
+  background-color: #191919;
+  width: 100%;
+  height: 60px;
+  border-radius: 2px;
+  z-index: 25;
+}
+
+.container-fluid .nav {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
+}
+
+.title {
+  padding-top: 15px;
+}
+
+.title li {
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container-fluid .nav-pills>li.active> .nav-pills>li.active>a:hover {
+  color: #191919;
+  background-color: #eee;
+}
+
+#pillz .nav-pills>li.active>a,
+#pillz .nav-pills>li.active>a:focus,
+#pillz .nav-pills>li.active>a:hover {
+  background-color: #eee;
+  color: #191919;
+}
+
+#pillz .nav>li>a:focus {
+  text-decoration: none;
+  background-color: #191919;
+  color: #eee;
+}
+
+.container-fluid .nav a:hover {
+  background-color: #eee;
+  color: #191919;
+}
+
+.nav a:visited {
+  color: #eee;
+}
+
+.nav a {
+  color: #191919;
+  font-size: 18px;
+}
+.header-icons{
+  padding-top: 20px;
+  margin-right: 5px;
+}
+.jumbotron {
+  height: 950px;
+  color: white;
+  text-align: right;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.jumbotron .container {
+  position: relative;
+}
+
+#home {
+  width: 100%;
+  background-color: #DB995A;
+  color: black;
+}
+
+#home .fa {
+  color: #191919;
+}
+#home .fa:hover{
+  color: white;
+  transition: 1s;
+}
+
+#home .container {
+  width: 100%;
+  text-align: center;
+}
+
+#home h1 {
+  padding-top: 130px;
+}
+
+#about {
+  background-color: #eee;
+  color: #191919;
+  padding-top: 80px;
+}
+
+#about p {
+  padding-top: 30px;
+}
+
+#featured {
+  background-color: #eee;
+  color: #191919;
+}
+#featured img{
+  width: auto;
+  height: 100%;
+}
+#featured img:hover{
+ box-shadow: 0 0 25px 5px grey;
+  cursor: pointer;
+}
+
+#projects {
+  background-color: #eee;
+  color: #191919;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+};
+#projects h1{
+  margin-bottom: 100px;
+}
+
+footer {
+  height: 80px;
+  background-color: #191919;
+}
+
+.footer-icons {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.fa {
+  margin-left: 5px;
+  color: white;
+}
+footer{
+  
+}
+footer .fa:hover{
+  color: grey;
+  transition: 1s;
+}
+
+/*Portfolio Cards*/
+
+
+ #cardz .nav {
+  margin: 0 auto;
+  width: 100%;
+  
+}
+
+#cardz .nav-pills>li.active>a,
+#cardz .nav-pills>li.active>a:focus,
+#cardz .nav-pills>li.active>a:hover {
+  color: #191919;
+  background-color: #DB995A;
+}
+#cardz .nav{
+  margin-bottom: 15px;
+}
+#cardz .nav a {
+  color: #000;
+}
+
+#cardz .card {
+  border: 1px solid black;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #333;
+  text-align: center;
+}
+
+#cardz .card:hover {
+  box-shadow: 0 0 25px 5px grey;
+  cursor: pointer;
+}
+
+#cardz .card img {
+  max-width: 100%;
+  height: 190px;
+}
+
+
+
+.nav a {
+  color: white;
+  font-size: 18px;
+}
+
+.card {
+  border: 1px solid black;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #ddd;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px 5px grey;
+  cursor: pointer;
+}
+
+#cardz .card img {
+  max-width: 100%;
+  height: 190px;
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1165px) {
+  .Name{
+    display: none;
+  }
+  .pillz-holder{
+    width: 100%;
+    text-align: center
+  }
+  .pillz-holder ul{
+    margin-left: 20%;
+    text-align: center;
+  }
+  #projects h1, #featured h1, #featured p{
+    text-align: center;
+    width: 100%;
+  }
+  #featured img{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #projects ul li {
+    padding: 0;
+    margin: 0 0 0 150px;
+    text-align: center;
+  }
+  #cardz .card img{
+    width: 350px;
+  }
+}
+@media only screen and (max-width:990px) {
+  #projects ul li {
+    padding: 0;
+    margin: 5px -10px  5px 110px;
+    text-align: center;
+  }
+}
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  .header-icons{
+    display: none;
+  }
+  #projects h1, #featured h1, #featured p{
+    text-align: center;
+    width: 100%;
+  }
+  #cardz .nav a {
+    color: #000;
+    margin: 0 -150px 0 -10px;
+    width: 125px;
+    font-size: 15px;
+}
+  
+  #featured img{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #cardz .card img{
+    width: 350px;
+  }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  
+  .title {
+    display: none;
+  }
+  #projects h1, #featured h1, #featured p{
+    text-align: center;
+    width: 100%;
+  }
+  #projects ul li {
+    padding: 0;
+    margin: 0 0 0 150px;
+    text-align: center;
+  }
+  #featured img{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #cardz .card img{
+    width: 350px;
+  }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 583px) {
+  #home h2{
+    font-size: 22px;
+  }
+  header {
+    display: none;
+  }
+#projects h1, #featured h1, #featured p{
+    text-align: center;
+    width: 100%;
+  }
+  #cardz .nav a {
+    color: #000;
+    font-size: 10px;
+    width: 80px;
+}
+  
+  #projects ul li {
+    padding: 0;
+    margin: 0 100px 0 80px;
+    text-align: center;
+  }
+ #projects #nav-css{
+    margin-left: 20px;
+   content: "CSS";
+  }
+  #projects #nav-css:after{
+    margin-left: -20px;
+  
+  }
+  #projects #nav-js{
+    margin-left: 5px;
+  }
+  #featured img{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #cardz .card img{
+    width: 350px;
+  }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+  body{
+    font-size: 12px;
+  }
+  header {
+    display: none;
+  }
+  #projects h1, #featured h1, #featured p{
+    text-align: center;
+    width: 100%;
+  }
+  ##projects ul li {
+    padding: 0;
+    margin: 0 0 0 150px;
+    text-align: center;
+  }
+  #cards .card img{
+    width: 350px;
+  }
+      }
+    </style>
+    <head>
+<body data-spy="scroll" data-target="#pillz" data-offset="20">
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 Name">
+          <ul class="title">
+            <li>Aundrey Drummond |</li>
+            <li>Junior Web developer</li>
+            <ul>
+        </div>
+        <div class="col-md-6 pillz-holder">
+        
+          <nav id="pillz">
+            <ul class="nav nav-pills">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#featured">Featured Project</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="home" class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="nameplate text-center">
+              <div class="row text-right header-icons">
+                <a href="https://github.com/aundreyd"><i class="fa fa-github-square" style="font-size:48px"></i></a>
+                <a href="https://facebook.com/aundrey.drummond"><i class="fa fa-facebook-square" style="font-size:48px"></i></a>
+                <a href="https://www.linkedin.com/in/aundrey-drummond-78228189"><i class="fa fa-linkedin-square" style="font-size:48px;"></i></a>
+                <a href="tel:+1-954-850-4276"><i class="fa fa-phone-square" style="font-size:48px" aria-hidden="true"></i></i></a>
+                <a href="mailto:aundreydrummond@live.com"><i class="fa fa-envelope-square" aria-hidden="true" style="font-size:48px"></i></a>
+              </div>
+              <h1>Aundrey Drummond</h1>
+              <h2>HTML&bull;CSS&bull;JavaScript&bull;JQuery&bull;WordPress</h2>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <h2>About Me</h2>
+            <p>
+              Hello, my name is Aundrey Drummond and this is my web portfolio. I've graduated with a Bachelor's degree in I.T. I've completed an internship with Food Truck Stars. Other than completing an internship, I have numerous projects here on my portfolio showcasing
+              my current skills.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <h2>Technologies</h2>
+            <p>
+              HTML, CSS, Bootstrap, JavaScript, jQuery, Angular, AJAX, Git, mySQL, PHP, Meteor, MongoDB, Responsive Design, Ruby, Rails
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="featured" class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-left">
+            <h1>Drawing Board</h1>
+            <p>Javascript project using the html5 canvas and JQuery to create a drawing board with changeable colors.</p>
+          </div>
+          <div class="col-md-8 hvr-pulse-grow">
+            <a href="https://codepen.io/aundreyd/full/WxYNZV/">
+              <img src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Drawing%20Board_zpsbi6wsdun.png" alt="Drawing Board" class="img-rounded" ></a>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects" class="jumbotron">
+      <div class="container text-left">
+        <h1>Projects</h1>
+        <div id="cardz">
+          <ul class="nav nav-pills ">
+            <li id="nav-all"><a href="#">All</a></li>
+            <li id="nav-css"><a href="#">CSS-Bootstrap</a></li>
+            <li id="nav-js"><a href="#">Javascript-JQuery</a></li>
+          </ul>
+          <div class="container text-center">
+            <div class="row">
+
+              <div class="col-md-4 cssProject">
+                <a href="https://codepen.io/aundreyd/full/VjykpK/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top " src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Adoptly_zpsvtfl1uny.jpg" alt="Adoptly img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Adoptly
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/ZOywLO/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Algorithims_zps8tlyuvui.jpg" alt="Algorthm img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Algorithms
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 cssProject">
+                <a href="https://codepen.io/aundreyd/full/wGvZxj/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Amazing%20space_zpsntu2amjx.png" alt="Amazing Space img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Amazing Space
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/ZOAxjQ/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Calculator_zpswqbodgtj.jpg" alt="Calculator img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Calculator
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 cssProject">
+                <a href="https://codepen.io/aundreyd/full/NNPprw/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/CodeBrainery_zpspabz2tr7.jpg" alt="Codebrainery img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           CodeBrainery
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 cssProject">
+                <a href="https://codepen.io/aundreyd/full/jqORNZ/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Common%20Cents_zpsqhjjiije.jpg" alt="Common Cents img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           Common Cents
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 cssProject">
+                <a href="https://codepen.io/aundreyd/full/EKxJxJ/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Cupful%20Cafe_zpshaa4coud.png" alt="Cupful Cafe img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Cupful Cafe
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/WxYNZV/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Drawing%20Board_zpsbi6wsdun.png" alt="Drawing Board img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           Drawing Board
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/zBjvwg/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Focus_zpsolplkmac.jpg" alt="Focus img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Focus
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/vLdPwM/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Form%20Validator_zpsahgy0ckg.jpg" alt="Form Validator img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           Form Validator
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jssProject">
+                <a href="https://codepen.io/aundreyd/full/WQZqwq/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/innovation%20cloud_zpsh819fv2g.png" alt="Innovation Cloud img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Innovation Cloud
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/RRQawP/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Its%20not%20an%20S_zps1kh3ajh0.jpg" alt="It's not an S img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            It's not an 'S'
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/qNoJqg/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Meme%20Generator_zpsa2ovyn06.jpg" alt="Adoptly img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           Meme generator
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 cssProject">
+                <a href="https://codepen.io/aundreyd/full/epeONx/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Move_zpsamktmfln.jpg" alt="Move img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Move
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/QEqZEg/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Movie%20Search_zpso1fx4guu.jpg" alt="Movie App img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Movie App
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/ZQLRwg/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/night%20and%20day_zpssulm8d5a.jpg" alt="Night and Day img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           Night and Day
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 cssProject">
+                <a href="https://codepen.io/aundreyd/full/Yweadg/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Red%20Eye%20Photography_zpsdehef2lt.jpg" alt="Red Eye img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+            Red Eye
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 cssProject">
+                <a href="https://codepen.io/aundreyd/full/rLvLGR/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/responsive%20tableless%20calendar_zpstcnaueuh.jpeg" alt="Calendar img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           Responsive Tableless Calendar
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 cssProject">
+                <a href="https://codepen.io/aundreyd/full/QyQgWL/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Shutterbug_zpsi45tyekg.jpg" alt="Shutterbug img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+          Shutterbug
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/rLQNaZ/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Sign%20in%20form_zps7gxwpi9s.png" alt="Sign in form img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           Sign In Form
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/XKqNpE/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/ToDo_zps6ngohofy.png" alt="Adoptly img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           ToDo List
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/PZRmBR/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/threadly_zpsggqwfzdk.png" alt="threadly img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+          Threadly
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-4 jsProject">
+                <a href="https://codepen.io/aundreyd/full/Eyvyvp/">
+                  <div class="card hvr-pulse">
+                    <img class="card-img-top" src="http://i1308.photobucket.com/albums/s612/aundreydrummond/Thumbnail/Talk%20Like%20Yoda_zpsiwixvty8.jpg" alt="Yoda img">
+                    <div class="card-block">
+                      <h2 class="card-text text-center">
+           Yoda Translator
+          </h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="contact">
+    <div class="row text-center footer-icons">
+      <a href="https://github.com/aundreyd"><i class="fa fa-github-square" style="font-size:48px"></i></a>
+      <a href="https://facebook.com/aundrey.drummond"><i class="fa fa-facebook-square" style="font-size:48px"></i></a>
+      <a href="https://www.linkedin.com/in/aundrey-drummond-78228189"><i class="fa fa-linkedin-square" style="font-size:48px;"></i></a>
+      <a href="tel:+1-954-850-4276"><i class="fa fa-phone-square" style="font-size:48px" aria-hidden="true"></i></i></a>
+      <a href="mailto:aundreydrummond@live.com"><i class="fa fa-envelope-square" aria-hidden="true" style="font-size:48px"></i></a>
+    </div>
+  </footer>
+</body>
+    <html>
