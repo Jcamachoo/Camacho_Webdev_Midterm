@@ -145,3 +145,17 @@ table.invoice {
     color: $primary-color;
   }
 }
+// Variables
+$primary-color: #1779ba;
+$secondary-color: #0b386f;
+$gray:  #9b9b9b;
+$light-gray: #eeeeee;
+$medium-gray: #c8c3be;
+$dark-gray: #96918c;
+$black: #322d28;
+$white: #f3f3f3;
+$body-background: #ffffff;
+$body-font-color: $black;
+
+$sans: 'Montserrat', sans-serif;
+$serif: 'Lora', Georgia, serif;
