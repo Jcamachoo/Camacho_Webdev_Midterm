@@ -1,270 +1,231 @@
-<html>
-  <style>
-    h1 {
-  font-family: Zapf Chancery, cursive;
-  font-weight:bold;
-}
-nav {
-  background-color:#1f2833;
-}
-nav a {
-  color:#005e80;
-  text-decoration:none;
-}
-nav a:hover {
-  color:#0096cc;
-  background-color:#262626;
-  text-decoration:none;
-}
-nav h2 {
-  font-family: cursive, fantasy;
-  font-weight: normal;
-  font-size: 20px;
-  float: left; 
-}
-section, article {
-  /*max-width:1000px;*/
-}
-footer {
-  /*border-top:5px solid #0086b3;*/
-}
-
-.about-content {
-  max-width:1000px;
-  background-image: linear-gradient(#003041, #161a3f, #060433);
-  border-radius: 25px;
-}
-.contact-content {
-  max-width:1000px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Web</title>
+</head>
+<style>body{
+  padding-top: 1.5cm;
   background-color: #1f2833;
-  border-radius: 25px;
 }
-.contact-content h4 {
-  line-height:35px;
-}
-.contact-content button {
-  cursor:pointer;
-}
-.footer-icons {
-  font-size:22px;
-}
-.nav-cell {
-  cursor:pointer;
-  background-color:#0d0d0d;
-  padding:0 !important;
-}
-.nav-content {
-  max-width:1000px;
-}
-.nav-text {
-  display:none !important;
-}
-.port-content {
-  max-width:1000px;
-  background-image: linear-gradient(#003041, #161a3f, #060433);
-  border-radius: 25px;
-}
-.port-content a {
-  max-width:600px;
+.navbar {
+  background-color: #1f2833;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-#about {
-  padding-top:80px !important;
-  padding-bottom:50px;
-  
-}
-#portfolio, #contact {
-  padding-top: 50px !important;
+.nav li a:hover {
+  background-color: black !important;
 }
 
-@media screen and (min-width: 576px) {
-  nav a {
-    font-weight:600;
-  }
-  nav .fa {
-    display:none !important;
-  }
-  
-  .footer-icons {
-    font-size:25px;
-  }
-  .nav-text {
-    display:inline-block !important;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  nav a {
-    margin-top:2px;
-    color:#f2f2f2;
-    border-radius:3px;
-    transition: 0.7s ease;
-  }
-  nav a:hover {
-    color:#black;
-    background-color:#c5c6c7;
-  }
-  
-  .nav-cell {
-    background-color:#1f2833;
-  }
-}
-h4{
+#aboutnav {
   color: white;
 }
-.text-center{
-  color: white; 
-}
-.form-group{
-  color: white; 
-}
-#geninfo{
-  color: #c3d2d8;
-p {
-font-size: 17px;
-text-align: center;
-  font-family: Snell Roundhand, cursive;
 
+#portnav {
+  color: white;
 }
-#abt {
-color: #0677a1;
-}
-h3{
 
-font-family: Snell Roundhand, cursive; 
+#connav {
+  color: white;
 }
-  div.desc {
-  padding: 15px;
-  float: center;
+
+#rightnav {
+  float: right;
+}
+
+#homesection{
+background-color: white;
+height: 100%;
+}
+/* About */
+
+#aboutsection {
+  background-color: #e2c2b3;
+  margin: 0cm;
   
+}
+
+#abouttext {
+  color: #000;
+  text-align: justify;
+  font-size: 20px;
+  padding-top: 3.5cm;
+  padding-right: 2cm;
+  padding-bottom: 1cm;
+  padding-left: 2cm;
+  font-family: Snell Roundhand, cursive;
+}
+
+#aboutimage {
+  float: right;
+  padding-bottom: 1cm;
+  padding-top: 2cm;
+  
+}
+
+.circular-border {
+  display: block;
+  border-radius: 200px;
+  box-sizing: border-box;
+  background-color: #DDD;
+  border: 1px solid #000;
+  width: 300px;
+  height: 300px;
+}
+
+/* Portfolio */
+
+#portsection {
+  background-color: #403234;
+}
+
+#portheader {
+  text-align: center;
+  font-family: Impact, fantasy;
+  color: white;
+}
+
+#portheader h2 {
+  font-size: 50px;
+  padding-bottom: .5cm;
+  padding-top: 1cm;
+}
+
+.portimg {
+  padding-bottom: .5cm;
+}
+
+/* contact */
+
+.contact {
+  background-color: #e2c2b3;
+}
+
+#conhead h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: Impact, fantasy;
+}
+
+.social-media {
+  width: 100px;
+  height: 100px;
+  padding-bottom: .5cm;
 }
   </style>
-<body> 
-  <div class="container-fluid p-0 site-content">
-  <nav class="fixed-top nav nav-fill" id="navbar">
-    <div class="container-fluid nav-content">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <a href="#about">
-          <h2 class="text-center my-1 text-light">Justyn Camacho&#127804;</h2>
-          </a>
-        </div>
-        <div class="col-4 col-md-2 nav-cell">
-          <a class="nav-item nav-link" href="#about"><i class="fa fa-user"></i><span class="nav-text">About Me</span></a>
-        </div>
-        <div class="col-4 col-md-2 nav-cell">
-          <a class="nav-item nav-link" href="#portfolio"><i class="fa fa-suitcase"></i><span class="nav-text">Portfolio</span></a>
-        </div>
-        
-        <div class="col-4 col-md-2 nav-cell">
-          <a class="nav-item nav-link" href="#contact"><i class="fa fa-envelope"></i><span class="nav-text">Contact</span></a>
-        </div>
+
+<body>
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Justyn's Website</a>
       </div>
+      <ul class="nav navbar-nav" id="rightnav">
+        <li><a id="connav" href="#homesection">HOME</a></li>
+        <li><a id="aboutnav" href="#aboutsection">About</a></li>
+        <li><a id="portnav" href="#portsection">Portfolio</a></li>
+        <li><a id="connav" href="#consection">Contact</a></li>
+        
+      </ul>
     </div>
   </nav>
-
-  <!-- Nav Scroll Container -->
-  <div data-spy="scroll" data-target="#navbar" data-offset="0">
-    <!-- * About * -->
-  <section class="container-fluid bg-dark text-white px-4 pb-5" id="about">
-    <div class="container-fluid about-content">
-      <div class="row align-items-center">
-        <div class="col-xs-12 col-md-7 col-lg-8 pt-5 px-2">
-          <h3 class="text-center"> A glimpse of me&#129488;</h3>
-          <p class="mt-4">Hello! I'm Justyn Elen Camacho. I am 20 years old, a second year college student and I am pursuing Information Technology in the University of the Immaculate Conception. <br><br>
-             I consider myself as a ‘forever student’ because I enjoy discovering and gaining new knowledge about something that I really want. My goal is to always love the things that I am doing. As a young adult, I want my professional career to take me. My career interest lies in developing web design and visual graphics design. <br><br>
-            This portfolio is a representation of all that I’ve learned from the web development class. 
-          </p>
-          <p id="geninfo">General Information<br> Date of Birth: May 21, 2000<br>
-            Address: Greenmeadows, Tugbok dist. Davao City<br>
-            Email: camachojustyn@gmail.com<br>
-            Contact No.: 09486665254
-            
-            
-          </p>
-        </div>
-        <div class="col-xs-12 col-md-5 col-lg-4 p-4">
-         <img class="img-fluid mx-auto d-block rounded-circle" src="https://jcamachoo.github.io/Camacho_Webdev_Midterm/exam/part2b/justyn2.jpeg" alt="Justyn">
-          <center> <h2 id="abt">Justyn Camacho</h2></center>
-        </div>
-      </div>
-    </div>
-  </section>
   
-  <!-- * Portfolio * -->
-  <article class="container-fluid bg-dark text-white pb-5" id="portfolio">
-    <div class="container-fluid port-content">
-      <h1 class="text-center mb-4">Portfolio</h1><br>
-      <center><p>These items shown below are mainly exercises done whilst undertaking the course  web development. </p></center>
-      <div class="row">
-        <div class="col-xs-12 col-lg-6 p-3">
-          <a class="mx-auto d-block" href="https://jcamachoo.github.io/Camacho_Webdev_Midterm/wishlist.html" target="blank"><img class="img-fluid mx-auto d-block w-100 rounded" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/Wishlist.png" alt="Wishlist"></a><div class="desc">Add a description of the image here</div> 
-        </div>
-        <div class="col-xs-12 col-lg-6 p-3">
-          <a class="mx-auto d-block" href="https://jcamachoo.github.io/Camacho_Webdev_Midterm/calendar.html" target="_blank"><img class="img-fluid mx-auto d-block w-100 rounded" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/calendar.png" alt="Calendar page"></a><div class="desc">Add a description of the image here</div>
-        </div>
+  <div class="container-fluid" id="homesection">
+    <div class="row">
+      <div class="col-sm-6" id="abouttext">
+        <h1>JUSTYN CAMACHO</h1>
+        <p>My name is Jesse and I live in Bradenton Fl. I'm incredibly new to programming and am teaching myself with the aid of Free Code Camp and Codecademy. I started two weeks ago and don't have any projects complete yet. I will be modifying this portfolio page as I go along and learn new things.</p>
+      </div>
+
+      <div class="col-sm-4" id="aboutimage">
+        <img class="img-responsive center-block circular-border" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/IMG_2310.jpeg"> 
         
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-lg-6 p-3">
-          <a class="mx-auto d-block" href="https://jcamachoo.github.io/Camacho_Webdev_Midterm/calendarwithcss.html" target="_blank"><img class="img-fluid mx-auto d-block w-100 rounded" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/calendarwithcss.png" alt="Calendar with css"></a><div class="desc">Add a description of the image here</div>
-        </div>
-        <div class="col-xs-12 col-lg-6 p-3">
-          <a class="mx-auto d-block" href="https://jcamachoo.github.io/Camacho_Webdev_Midterm/registration.html" target="_blank"><img class="img-fluid mx-auto d-block w-100 rounded" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/registration.png" alt="Registration page"></a><div class="desc">Add a description of the image here</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-lg-6 p-3">
-          <a class="mx-auto d-block" href="https://jcamachoo.github.io/Camacho_Webdev_Midterm/masterdetail.html" target="_blank"><img class="img-fluid rounded" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/masterdetail.png" alt="Master Detail"></a><div class="desc">Add a description of the image here</div>
-        </div>
-        <div class="col-xs-12 col-lg-6 p-3">
-          <a class="mx-auto d-block" href="https://jcamachoo.github.io/Camacho_Webdev_Midterm/vmg.html" target="_blank"><img class="img-fluid rounded" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/videoandaudio.png" alt="Video and Audio"></a><div class="desc">Add a description of the image here</div>
-        </div>
-        <div class="col-xs-12 col-lg-6 p-3">
-          <a class="mx-auto d-block" href="https://jcamachoo.github.io/Camacho_Webdev_Midterm/act47/tribute.html" target="_blank"><img class="img-fluid rounded" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/tribute.png" alt="Tribute Page"></a><div class="desc">Add a description of the image here</div>
-        </div>
-        <div class="col-xs-12 col-lg-6 p-3">
-          <a class="mx-auto d-block" href="https://jcamachoo.github.io/Camacho_Webdev_Midterm/calculator.html" target="_blank"><img class="img-fluid rounded" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/calc.png" alt="Calculator Page"></a><div class="desc">Add a description of the image here</div>
-        </div>
-      </div>
     </div>
-  </article>
-  
-  <!-- * Contact * -->
-  <article class="container-fluid bg-dark px-4 pb-5" id="contact">
-    <div class="container-fluid contact-content">
-    <h1 class="text-center">Contact</h1>
+
+
+  <!-- About Section -->
+
+  <div class="container-fluid" id="aboutsection">
     <div class="row">
-      <div class="col-xs-12 col-md-6 px-2 pt-4">
-        <h4> If you have any questions or queries, Im always glad to answer. I also take other people's advice so I can improve my works.  Just send me a message and let me know your concern. Thank you!</h4>
-        <img class="img-fluid mx-auto d-block rounded-circle" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/IMG_2310.jpeg" alt="Girl in a jacket" width="300" height="300">
+      <div class="col-sm-6" id="abouttext">
+        <h1>JUSTYN CAMACHO</h1>
+        <p>My name is Jesse and I live in Bradenton Fl. I'm incredibly new to programming and am teaching myself with the aid of Free Code Camp and Codecademy. I started two weeks ago and don't have any projects complete yet. I will be modifying this portfolio page as I go along and learn new things.</p>
       </div>
-      
-      <div class="col-xs-12 col-md-6 pt-4">
-        <form>
-          <div class="form-group">
-            <label>Name</label>
-            <input class="form-control form-control-lg w-100" type="text" name="Name" placeholder="Enter Fullname" required>
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input class="form-control form-control-lg" type="email" name="e-mail " placeholder="Enter Email Address" required>
-          </div>
-          <div class="form-group">
-            <label>Enter Phone Number</label>
-            <input class="form-control form-control-lg" type="tel" name="Phone" placeholder="Phone Number">
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea class="form-control form-control-lg" name="Message" rows="5" placeholder="Type your message here &#128140;" required></textarea>
-          </div>
-          <button class="btn" type="submit" onclick="alert('Your Message has been sent!')"> Send Message </button><br><br>
-        </form>
+
+      <div class="col-sm-4" id="aboutimage">
+        <img class="img-responsive center-block circular-border" src="https://raw.githubusercontent.com/Jcamachoo/Camacho_Webdev_Midterm/master/exam/part2b/IMG_2310.jpeg"> 
+        
       </div>
     </div>
-    </div>
-  </article>
+
+
   </div>
-</div>
+
+  <!-- Portfolio -->
+
+  <div class="container-fluid" id="portsection">
+    <div id="portheader">
+      <h2>Portfolio<h/2>
+    </div>
+    <div class="row">
+          <div class="col-sm-4 portimg">
+      <img class="img-responsive" src="http://data.whicdn.com/images/67656616/original.jpg">
+          </div>
+          <div class="col-sm-4 portimg">
+      <img class="img-responsive" src="http://data.whicdn.com/images/67656616/original.jpg">
+          </div>
+          <div class="col-sm-4 portimg">
+      <img class="img-responsive" src="http://data.whicdn.com/images/67656616/original.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 portimg">
+      <img class="img-responsive" src="http://data.whicdn.com/images/67656616/original.jpg">
+          </div>
+          <div class="col-sm-4 portimg">
+      <img class="img-responsive" src="http://data.whicdn.com/images/67656616/original.jpg">
+          </div>
+          <div class="col-sm-4 portimg">
+      <img class="img-responsive" src="http://data.whicdn.com/images/67656616/original.jpg">
+          </div>
+        </div>
+  </div>
+        
+<!-- Contact -->
+      
+<div class="container-fluid contact" id="consection">
+  <div id="conhead">
+    <h2>Contact</h2>
+  </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <a target="blank"href="https://www.freecodecamp.com/jessebly"><img class="img-responsive center-block social-media" src="https://avatars0.githubusercontent.com/u/9892522?v=3&s=200"></a>
+        </div>
+        <div class="col-sm-3 img-responsive">
+          <a target="blank"href="https://github.com/Jessebly"><img class="img-responsive center-block social-media" src="https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png"></a>
+        </div>
+        <div class="col-sm-3 img-responsive">
+          <a target="blank"href="https://www.facebook.com/jesse.blystone.1"><img class="img-responsive center-block social-media" src="https://lh3.googleusercontent.com/ZZPdzvlpK9r_Df9C3M7j1rNRi7hhHRvPhlklJ3lfi5jk86Jd1s0Y5wcQ1QgbVaAP5Q=w170"></a>
+        </div>
+        <div class="col-sm-3 img-responsive">
+          <a target="blank"href="Profilehttps://www.linkedin.com/in/jesse-blystone-aa50aaa8"><img class="img-responsive center-block social-media" src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300"></a>
+        </div>
+      
+      </div>
+    </div>
+  </footer>
+ </div>
+     
+      
 </body>
+
+
 </html>
